@@ -1,0 +1,14 @@
+{
+    "apps": [
+        {
+            "script": "app.js",
+            "instances": "max",
+            "exec_mode": "fork",
+            "watch": true,
+            "log_date_format": "YYYY-MM-DD HH:mm Z",
+            "error_file": "log/err.log",
+            "out_file": "log/app.log",
+            "pid_file": "pids/api.pid"
+        }
+    ]
+}
