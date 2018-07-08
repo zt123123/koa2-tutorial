@@ -4,7 +4,10 @@
   "description": "koa2-tutorial",
   "main": "app.js",
   "scripts": {
-    "test": "mocha"
+    "e2e": "node ./e2e/index.js",
+    "unit": "karma start",
+    "uitest": "backstop test",
+    "apitest": "node ./mochaRunner.js"
   },
   "repository": {
     "type": "git",
@@ -28,6 +31,15 @@
     "log4js": "^2.10.0"
   },
   "devDependencies": {
-    "mocha": "^5.2.0"
+    "@webpack-cli/init": "0.0.8",
+    "jasmine-core": "^3.1.0",
+    "karma": "^2.0.4",
+    "karma-chrome-launcher": "^2.2.0",
+    "karma-coverage": "^1.1.2",
+    "karma-jasmine": "^1.1.2",
+    "karma-phantomjs-launcher": "^1.0.4",
+    "mocha": "^5.2.0",
+    "mochawesome": "^3.0.2",
+    "supertest": "^3.1.0"
   }
 }
