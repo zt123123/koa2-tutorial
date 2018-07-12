@@ -5,6 +5,7 @@
   "main": "app.js",
   "scripts": {
     "dev":"webpack --config webpack.dev.js",
+    "build":"webpack --config webpack.prod.js",
     "e2e": "node ./e2e/index.js",
     "unit": "karma start",
     "uitest": "backstop test",
